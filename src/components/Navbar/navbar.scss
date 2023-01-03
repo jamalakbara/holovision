@@ -1,0 +1,44 @@
+@import '/public/css/general.scss';
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: $nav-height;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  background: rgba(52, 245, 198, 0.05);
+  backdrop-filter: blur(15px);
+
+  &__links{
+    display: flex;
+    margin-right: $navbar-container;
+  }
+
+  &__logo{
+    margin-left: $navbar-container;
+  }
+
+  &__link{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0 16px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

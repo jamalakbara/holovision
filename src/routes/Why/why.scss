@@ -1,0 +1,14 @@
+@import '/public/css/general.scss';
+
+.why{
+  margin-top: $padding-section;
+  min-height: 100vh;
+
+  &__main{
+    display: flex;
+  }
+
+  &__text, &__images{
+    flex: 1;
+  }
+}

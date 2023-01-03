@@ -1,0 +1,27 @@
+.heading{
+  h1{
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 8px;
+      display: block;
+      background: #21DDBE;
+      bottom: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

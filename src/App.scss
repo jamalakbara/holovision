@@ -1,0 +1,21 @@
+@import '/public/css/fonts.scss';
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #011213;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  padding: 0 150px;
+}

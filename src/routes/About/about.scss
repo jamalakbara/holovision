@@ -1,0 +1,17 @@
+@import '/public/css/general.scss';
+
+.about{
+  margin-top: $padding-section;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__main, &__img{
+    flex: 1;
+  }
+
+  &__img{
+    display: flex;
+    justify-content: center;
+  }
+}

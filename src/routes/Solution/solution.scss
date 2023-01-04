@@ -1,7 +1,6 @@
 @import '/public/css/general.scss';
 
-.why{
-  margin-top: $padding-section;
+.solution{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,14 +12,13 @@
     align-items: center;
   }
 
-  &__text, &__images{
+  &__text, &__image{
     flex: 1;
   }
 
-  &__images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 56px;
+  &__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

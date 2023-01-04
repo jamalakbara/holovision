@@ -7,6 +7,7 @@ import Solution from './routes/Solution/Solution';
 import How from './routes/How/How';
 import About from './routes/About/About';
 import Features from './routes/Features/Features';
+import Case_study from './routes/Case Study/Case_study';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <About />
 
       <Features />
+
+      <Case_study />
 
       <Routes>
         <Route exact path="/" component={Home} />

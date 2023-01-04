@@ -1,4 +1,4 @@
-import React from 'react'
+import './features.scss'
 import Description from '../../components/Description/Description'
 import Header from '../../components/Header/Header'
 import Heading from '../../components/Heading/Heading'
@@ -55,7 +55,7 @@ const Features = () => {
     },
   ]
   return (
-    <section className='features'>
+    <section className='features container'>
       <Heading text={'Our Technology'} />
       <div className='features__contents'>
         {

@@ -1,0 +1,20 @@
+@import '/public/css/general.scss';
+
+.clients{
+  &__clients{
+    margin-top: $nav-height;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // place-items: center;
+    // grid-gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__client{
+    width: 100% / 5;
+    margin: 85px 32px;
+  }
+}

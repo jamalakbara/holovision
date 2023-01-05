@@ -1,0 +1,7 @@
+@import '/public/css/general.scss';
+.footer{
+  &__form{
+    display: flex;
+    justify-content: flex-end;
+  }
+}

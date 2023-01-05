@@ -7,7 +7,11 @@ import Solution from './routes/Solution/Solution';
 import How from './routes/How/How';
 import About from './routes/About/About';
 import Features from './routes/Features/Features';
-import Case_study from './routes/Case Study/Case_study';
+import CaseStudy from './routes/Case Study/Case_study';
+import Product from './routes/Product/Product';
+import Projects from './routes/Projects/Projects';
+import Clients from './routes/Clients/Clients';
+import Footer from './routes/Footer/Footer';
 
 function App() {
   return (
@@ -26,7 +30,15 @@ function App() {
 
       <Features />
 
-      <Case_study />
+      <CaseStudy />
+
+      <Product />
+
+      <Projects />
+
+      <Clients />
+
+      <Footer />
 
       <Routes>
         <Route exact path="/" component={Home} />

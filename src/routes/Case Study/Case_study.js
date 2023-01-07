@@ -61,6 +61,9 @@ const Case_study = () => {
     },
   ])
 
+  const casesLessThanEquals3 = cases.filter(cs => cs.key <= 3)
+  const casesMoreThan3 = cases.filter(cs => cs.key > 3)
+
   const handleClick = (key) => {    
     setCases(cases.map(dt => {
       if (dt.key === key) {
@@ -76,38 +79,28 @@ const Case_study = () => {
       <div className='case-study__btcontainer'>
         <div className='case-study__buttons'>
           {
-            cases.map(dt => {
-              if (dt.key <= 3){
-                return (
-                  <button key={dt.key} onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
-                    <img src={dt.icon} alt="icon" />
-                    <p>{dt.label}</p>
-                  </button>
-                )
-              }
-            })
+            casesLessThanEquals3.map(dt => (
+              <button key={dt.key} onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
+                <img src={dt.icon} alt="icon" />
+                <p>{dt.label}</p>
+              </button>
+            ))
           }
         </div>
         <div className='case-study__buttons'>
           {
-            cases.map(dt => {
-              if (dt.key > 3){
-                return (
-                  <button key={dt.key} onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
-                    <img src={dt.icon} alt="icon" />
-                    <p>{dt.label}</p>
-                  </button>
-                )
-              }
-            })
+            casesMoreThan3.map(dt => (
+              <button key={dt.key} onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
+                <img src={dt.icon} alt="icon" />
+                <p>{dt.label}</p>
+              </button>
+            ))
           }
         </div>
       </div>
       <div className='case-study__main'>
           {
-            cases.map(dt => {
-              if (dt.isVisible){
-                return (
+            cases.filter(dt => dt.isVisible).map(dt => (
                   <div className='case-study__content'>
                     <h1>{dt.title}</h1>
                     <Description>
@@ -116,8 +109,7 @@ const Case_study = () => {
                     <img src={dt.image} alt='imagecase' />
                   </div>
                 )
-              }
-            })
+            )
           }
       </div>
     </section>

@@ -8,7 +8,8 @@ import Footer from '../Footer/Footer';
 import Why from '../Why/Why';
 import Solution from '../Solution/Solution';
 import How from '../How/How';
-import Navbar from '../../components/Navbar/Navbar'
+// import Navbar from '../../components/Navbar/Navbar'
+import '../../components/Navbar/navbar.scss'
 import About from '../About/About';
 import './home.scss'
 import { useRef } from 'react';

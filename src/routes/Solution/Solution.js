@@ -5,7 +5,7 @@ import './solution.scss'
 
 const Solution = () => {
   return (
-    <section className='solution container'>
+    <section className='solution container' id='solution'>
       <Heading text={'Our Solution'} />
       <div className='solution__main'>
         <div className='solution__text'>

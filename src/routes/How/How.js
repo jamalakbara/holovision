@@ -37,7 +37,7 @@ const How = () => {
       <div className="how__contents">
         {
           contents.map(content => (
-            <div className="how__content">
+            <div key={content.key} className="how__content">
               <div className="how__content-title">
                 <div className="how__content-number">
                   {content.key}

@@ -17,7 +17,7 @@ const AnotherFeatures = () => {
           </Description>
         </div>
         <div className='another-features__image'>
-          <img src='/img/rafiki.png' />
+          <img src='/img/rafiki.png' alt='imgrafiki' />
         </div>
       </div>
     </section>

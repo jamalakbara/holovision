@@ -1,0 +1,25 @@
+@import '/public/css/general.scss';
+
+.key-features-holo{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__main{
+    display: flex;
+    gap: 200px;
+    margin-top: 160px;
+  }
+
+  &__image, &__text{
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text{
+    text-align: right;
+  }
+}

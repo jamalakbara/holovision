@@ -68,8 +68,8 @@ const Features = () => {
               <Description>
                 <ul>
                   {
-                    content.descs.map(desc => (
-                      <li>{desc}</li>
+                    content.descs.map((desc,idx) => (
+                      <li key={idx}>{desc}</li>
                     ))
                   }
                 </ul>

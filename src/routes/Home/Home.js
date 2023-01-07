@@ -20,13 +20,14 @@ const Home = () => {
   const targetFeatures = useRef(null);
   const targetProducts = useRef(null);
   const targetAbout = useRef(null);
+  const targetHome = useRef(null);
 
   const navlink = 
     [
       {
         key: 1,
         label: "Home",
-        to: "/"
+        to: targetHome
       },
       {
         key: 2,
@@ -72,7 +73,7 @@ const Home = () => {
         </div>
       </nav>
       
-      <section className='home container'>
+      <section ref={targetHome} className='home container'>
         <div className='home__main'>
           <div className='home__compro'>
             <h1>Trust Your Asset Security With AI</h1>

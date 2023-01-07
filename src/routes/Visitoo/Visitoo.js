@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import Card from "../../components/Card/Card"
 import Navback from "../../components/Navback/Navback"
 import AnotherFeatures from "../AnoterFeatures/AnotherFeatures"
@@ -13,7 +12,7 @@ const Visitoo = () => {
       <Navback />
 
       <div className="visitoo container">
-        <Card img={'/img/visitoo.png'} header={'Visitoo'} desc={'Quick check-in experience, store visitor information in database, manage and analyze visitor behavior on your own dashboard'} to={'/'} />
+        <Card img={'/img/visitoo.png'} header={'Visitoo'} desc={'Quick check-in experience, store visitor information in database, manage and analyze visitor behavior on your own dashboard'} />
       </div>
 
       <KeyFeatures />

@@ -6,6 +6,15 @@ import Button from '../../components/Button/Button'
 import './card.scss'
 
 const Card = ({img, header, desc, to}) => {
+  const handleClick = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }, 100)
+  }
+
   return (
     <section className='card'>
       <div className='card__img'>
@@ -21,7 +30,7 @@ const Card = ({img, header, desc, to}) => {
         {
           to && (
             <Link to={to}>
-              <Button label='Read More' />
+              <Button label='Read More' on_click={handleClick} />
             </Link>
           )
         }

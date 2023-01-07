@@ -79,7 +79,7 @@ const Case_study = () => {
             cases.map(dt => {
               if (dt.key <= 3){
                 return (
-                  <button onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
+                  <button key={dt.key} onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
                     <img src={dt.icon} alt="icon" />
                     <p>{dt.label}</p>
                   </button>
@@ -93,7 +93,7 @@ const Case_study = () => {
             cases.map(dt => {
               if (dt.key > 3){
                 return (
-                  <button onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
+                  <button key={dt.key} onClick={() => handleClick(dt.key)} id={dt.label} className={`case-study__button ${dt.isVisible ? 'active': ''}`}>
                     <img src={dt.icon} alt="icon" />
                     <p>{dt.label}</p>
                   </button>

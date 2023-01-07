@@ -16,7 +16,7 @@ const Product = () => {
       img: "/img/holo.png",
       header: "Holovision NVR",
       desc: "Accurately detect deliveries, people, animals, Continuous recording, Private storage",
-      to: '/visitoo'
+      to: '/holovision'
     },
   ]
   return (

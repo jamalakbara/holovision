@@ -1,11 +1,11 @@
 import './App.scss';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './routes/Home/Home'
 import Visitoo from './routes/Visitoo/Visitoo';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Holovision from './routes/Holovision/Holovision';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/visitoo",
     element: <Visitoo />,
+  },
+  {
+    path: "/holovision",
+    element: <Holovision />,
   },
 ]);
 

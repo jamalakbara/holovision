@@ -9,14 +9,14 @@ const Product = () => {
       img: "/img/visitoo.png",
       header: "Visitoo",
       desc: "Quick check-in experience, store visitor information in database, manage and analyze visitor behavior on your own dashboard",
-      to: '/'
+      to: '/visitoo'
     },
     {
       key: 2,
       img: "/img/holo.png",
       header: "Holovision NVR",
       desc: "Accurately detect deliveries, people, animals, Continuous recording, Private storage",
-      to: '/'
+      to: '/visitoo'
     },
   ]
   return (

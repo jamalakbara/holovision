@@ -1,0 +1,32 @@
+@import '/public/css/general.scss';
+
+.visitoo-app{
+  min-height: 100vh;
+  margin-top: $nav-height;
+
+  &__contents{
+    margin-top: 160px;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header, img{
+      margin-bottom: 100px;
+    }
+
+    .header{
+      text-align: center;
+    }
+  }
+
+  &__img{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '/public/css/general.scss';
+
+.navback{
+  height: $nav-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  backdrop-filter: blur(15px);
+}

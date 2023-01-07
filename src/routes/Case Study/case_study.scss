@@ -2,6 +2,7 @@
 
 .case-study{
   min-height: 100vh;
+  margin-top: $nav-height;
   // &__main{
   //   display: flex;
   //   flex-direction: column;
@@ -43,7 +44,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 62px;
-    margin-top: $nav-height;
+    margin-top: 160px;
   }
 
   &__buttons{

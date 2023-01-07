@@ -1,8 +1,11 @@
 @import '/public/css/general.scss';
 
 .clients{
+  min-height: 100vh;
+  margin-top: $nav-height;
+
   &__clients{
-    margin-top: $nav-height;
+    margin-top: 160px;
     // display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     // place-items: center;

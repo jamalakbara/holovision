@@ -18,9 +18,13 @@ const Card = ({img, header, desc, to}) => {
             {desc}
           </p>
         </Description>
-        <Link to={to}>
-          <Button label='Read More' />
-        </Link>
+        {
+          to && (
+            <Link to={to}>
+              <Button label='Read More' />
+            </Link>
+          )
+        }
       </div>
     </section>
   )

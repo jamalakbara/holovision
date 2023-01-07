@@ -1,4 +1,3 @@
-import React from 'react'
 import ContactUs from '../../components/ContactUs/ContactUs'
 import Heading from '../../components/Heading/Heading'
 import Sosmed from '../../components/Sosmed/Sosmed'

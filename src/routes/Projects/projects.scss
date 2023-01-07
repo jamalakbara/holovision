@@ -1,8 +1,11 @@
 @import '/public/css/general.scss';
 
 .projects{
+  min-height: 100vh;
+  margin-top: $nav-height;
+
   &__carrousel{
-    margin-top: $nav-height;
+    margin-top: 160px;
   }
   &__section{
     display: flex;

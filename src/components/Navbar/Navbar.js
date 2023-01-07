@@ -1,11 +1,10 @@
 import Logo from '../Logo/Logo'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 import './navbar.scss'
 
 const Navbar = () => {
-  const [navlink, setNavlink] = useState(
+  const navlink = 
     [
       {
         key: 1,
@@ -15,25 +14,24 @@ const Navbar = () => {
       {
         key: 2,
         label: "Solution",
-        to: "/solution"
+        to: "#solution"
       },
       {
         key: 3,
         label: "Features",
-        to: "/features"
+        to: "#features"
       },
       {
         key: 4,
         label: "Products",
-        to: "/products"
+        to: "#products"
       },
       {
         key: 5,
         label: "About Us",
-        to: "/about-us"
+        to: "#about"
       },
     ]
-  );
 
   return (
     <nav className="navbar">

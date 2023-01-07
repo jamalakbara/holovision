@@ -1,7 +1,10 @@
 @import '/public/css/general.scss';
 
 .product{
+  min-height: 100vh;
+  margin-top: $nav-height;
+
   &__cards{
-    margin-top: $nav-height;
+    margin-top: 160px;
   }
 }

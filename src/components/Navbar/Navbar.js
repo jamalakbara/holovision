@@ -3,35 +3,10 @@ import { Link } from 'react-router-dom';
 
 import './navbar.scss'
 
-const Navbar = () => {
-  const navlink = 
-    [
-      {
-        key: 1,
-        label: "Home",
-        to: "/"
-      },
-      {
-        key: 2,
-        label: "Solution",
-        to: "#solution"
-      },
-      {
-        key: 3,
-        label: "Features",
-        to: "#features"
-      },
-      {
-        key: 4,
-        label: "Products",
-        to: "#products"
-      },
-      {
-        key: 5,
-        label: "About Us",
-        to: "#about"
-      },
-    ]
+const Navbar = ({onClick, navLink}) => {
+  function handleClick(target) {
+    target.current.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <nav className="navbar">
@@ -41,8 +16,8 @@ const Navbar = () => {
 
       <div className='navbar__links'>
         {
-          navlink.map(link => (
-            <Link key={link.key} className="navbar__link" to={link.to}>
+          navLink.map(link => (
+            <Link key={link.key} className="navbar__link" onClick={() => handleClick(link.to)}>
               {link.label}
             </Link>
           ))

@@ -1,0 +1,148 @@
+@import '/public/css/general.scss';
+
+.why{
+  // margin-top: $padding-section;
+  min-height: $min-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__main{
+    display: flex;
+    margin-top: $margin-from-heading;
+    align-items: center;
+    gap: $gap-split-half-flex;
+  }
+
+  &__text, &__images{
+    flex: 1;
+  }
+
+  &__images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 56px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .why{
+    // margin-top: $padding-section;
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+    
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .why{
+    // margin-top: $padding-section;
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+    
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .why{
+    // margin-top: $padding-section;
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+    
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .why{
+    // margin-top: $padding-section;
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+    
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

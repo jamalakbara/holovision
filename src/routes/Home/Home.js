@@ -1,20 +1,17 @@
-import Button from '../../components/Button/Button'
-import Features from '../Features/Features';
-import CaseStudy from '../Case Study/Case_study';
-import Product from '../Product/Product';
-import Projects from '../Projects/Projects';
-import Clients from '../Clients/Clients';
-import Footer from '../Footer/Footer';
-import Why from '../Why/Why';
-import Solution from '../Solution/Solution';
-import How from '../How/How';
-// import Navbar from '../../components/Navbar/Navbar'
+import Features from '../../sections/Features/Features';
+import CaseStudy from '../../sections/CaseStudy/CaseStudy';
+import Product from '../../sections/Product/Product';
+import Projects from '../../sections/Projects/Projects';
+import Clients from '../../sections/Clients/Clients';
+import Footer from '../../sections/Footer/Footer';
+import Why from '../../sections/Why/Why';
+import Solution from '../../sections/Solution/Solution';
+import How from '../../sections/How/How';
+import Navbar from '../../components/Navbar/Navbar'
 import '../../components/Navbar/navbar.scss'
-import About from '../About/About';
-import './home.scss'
+import About from '../../sections/About/About';
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../../components/Logo/Logo';
+import Compro from '../../sections/Compro/Compro';
 
 const Home = () => {
   const targetSolution = useRef(null);
@@ -52,47 +49,25 @@ const Home = () => {
       },
     ]
 
-  function handleClick(target) {
-    target.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
   return (
     <>
-      <nav className="navbar">
-        <Link className='navbar__logo' to="/">
-          <Logo />
-        </Link>
-
-        <div className='navbar__links'>
-          {
-            navlink.map(link => (
-              <Link key={link.key} className="navbar__link" onClick={() => handleClick(link.to)}>
-                {link.label}
-              </Link>
-            ))
-          }
-        </div>
-      </nav>
+      <Navbar navLink={navlink} />
       
-      <section ref={targetHome} className='home container'>
-        <div className='home__main'>
-          <div className='home__compro'>
-            <h1>Trust Your Asset Security With AI</h1>
-            <Button label={'Download Compro'} />
-          </div>
-          {/* <div className='home__image'>
-            <img src='/img/home.png' />
-          </div> */}
-        </div>
-      </section>
+      <div ref={targetHome}>
+        <Compro />
+      </div>
 
-      <Why />
+      <div>
+        <Why />
+      </div>
       
       <div ref={targetSolution}>
         <Solution />
       </div>
 
-      <How />
+      <div>
+        <How />
+      </div>
 
       <div ref={targetAbout}>
         <About />
@@ -102,17 +77,25 @@ const Home = () => {
         <Features />
       </div>
 
-      <CaseStudy />
+      <div>
+        <CaseStudy />
+      </div>
       
       <div ref={targetProducts}>
         <Product />
       </div>
 
-      <Projects />
+      <div>
+        <Projects />
+      </div>
 
-      <Clients />
+      <div>
+        <Clients />
+      </div>
 
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </>
   )
 }

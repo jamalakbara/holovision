@@ -1,0 +1,232 @@
+@import '/public/css/general.scss';
+
+.projects{
+  min-height: $min-height;
+
+  &__carrousel{
+    margin-top: $margin-from-heading;
+  }
+  &__section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  &__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__location{
+    display: flex;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+  &__city{
+    margin-right: 24px;
+  }
+  &__desc{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects{
+    min-height: $min-height;
+  
+    &__carrousel{
+      margin-top: $margin-from-heading-sm;
+    }
+    &__img{
+      width: 100%;
+      flex: 1 1 25%;
+      img{
+        width: 100%;
+      }
+    }
+    &__section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+    }
+    &__main{
+      display: flex;
+      flex: 1 1 75%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+    &__location{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+    &__city{
+      margin-right: 24px;
+    }
+    &__desc{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .projects{
+    min-height: $min-height;
+  
+    &__carrousel{
+      margin-top: $margin-from-heading-sm;
+    }
+    &__img{
+      width: 100%;
+      flex: 1 1 25%;
+      img{
+        width: 100%;
+      }
+    }
+    &__section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+    }
+    &__main{
+      display: flex;
+      flex: 1 1 75%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+    &__location{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+    &__city{
+      margin-right: 24px;
+    }
+    &__desc{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects{
+    min-height: $min-height;
+  
+    &__carrousel{
+      margin-top: $margin-from-heading-sm;
+    }
+    &__img{
+      width: 100%;
+      flex: 1 1 25%;
+      img{
+        width: 100%;
+      }
+    }
+    &__section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+    }
+    &__main{
+      display: flex;
+      flex: 1 1 75%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+    &__location{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+    &__city{
+      margin-right: 24px;
+    }
+    &__desc{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .projects{
+    min-height: $min-height;
+  
+    &__carrousel{
+      margin-top: $margin-from-heading-sm;
+    }
+    &__img{
+      width: 100%;
+      flex: 1 1 25%;
+      img{
+        width: 100%;
+      }
+    }
+    &__section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+    }
+    &__main{
+      display: flex;
+      flex: 1 1 75%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+    &__location{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+    &__city{
+      margin-right: 24px;
+    }
+    &__desc{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}

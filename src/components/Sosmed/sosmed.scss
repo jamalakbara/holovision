@@ -1,3 +1,5 @@
+@import '/public/css/general.scss';
+
 .sosmed{
   display: flex;
   justify-content: center;
@@ -19,6 +21,87 @@
     border: none;
     &:last-child{
       margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sosmed{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #2E2E2E;
+    padding-top: $margin-from-heading-sm;
+    margin-bottom: $margin-from-heading-sm;
+    &__item{
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      background-color: transparent;
+      cursor: pointer;
+      margin-right: 52px;
+  
+      outline: none;
+      border: none;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sosmed{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #2E2E2E;
+    padding-top: $margin-from-heading-sm;
+    margin-bottom: $margin-from-heading-sm;
+    &__item{
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      background-color: transparent;
+      cursor: pointer;
+      margin-right: 52px;
+  
+      outline: none;
+      border: none;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sosmed{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #2E2E2E;
+    padding-top: $margin-from-heading-sm;
+    margin-bottom: $margin-from-heading-sm;
+    &__item{
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      background-color: transparent;
+      cursor: pointer;
+      margin-right: 52px;
+  
+      outline: none;
+      border: none;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }

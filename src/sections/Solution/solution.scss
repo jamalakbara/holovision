@@ -1,0 +1,145 @@
+@import '/public/css/general.scss';
+
+.solution{
+  min-height: $min-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__main{
+    display: flex;
+    margin-top: $margin-from-heading;
+    align-items: center;
+    gap: $gap-split-half-flex;
+  }
+
+  &__text, &__image{
+    flex: 1;
+  }
+
+  &__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution{
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .solution{
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .solution{
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text{
+      .header, .description{
+        text-align: center;
+      }
+    }
+  
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .solution{
+    min-height: $min-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    &__main{
+      display: flex;
+      // flex-direction: column-reverse;
+      margin-top: $margin-from-heading-sm;
+      align-items: center;
+      gap: $gap-split-half-flex;
+    }
+  
+    // &__text{
+    //   .header, .description{
+    //     text-align: center;
+    //   }
+    // }
+  
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

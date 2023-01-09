@@ -27,7 +27,7 @@ const Features = () => {
         "Vehicle Traffic Estimation",
         "Costume AI Solution "
       ],
-      icon: "/img/AI Solution.png"
+      icon: "/img/Application.png"
     },
     {
       key: 3,
@@ -39,7 +39,7 @@ const Features = () => {
         "Vehicle Traffic Estimation",
         "Costume AI Solution "
       ],
-      icon: "/img/AI Solution.png"
+      icon: "/img/System n Integration.png"
     },
     {
       key: 4,
@@ -51,7 +51,7 @@ const Features = () => {
         "Vehicle Traffic Estimation",
         "Costume AI Solution "
       ],
-      icon: "/img/AI Solution.png"
+      icon: "/img/One Stop.png"
     },
   ]
   return (

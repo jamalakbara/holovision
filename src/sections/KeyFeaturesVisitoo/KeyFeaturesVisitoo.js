@@ -13,21 +13,21 @@ const KeyFeaturesVisitoo = () => {
     },
     {
       key: 2,
-      header: "Analytic Dashboard",
-      desc: "Comprehensively analyze visitor data",
-      icon: "/img/buil.png"
+      header: "Face Recognition",
+      desc: "Detect someone with high accuracy",
+      icon: "/img/photo.png"
     },
     {
       key: 3,
-      header: "Analytic Dashboard",
-      desc: "Comprehensively analyze visitor data",
-      icon: "/img/buil.png"
+      header: "Attendance and Visitor Management",
+      desc: "Restrict visitor access to certain locations",
+      icon: "/img/lock.png"
     },
     {
       key: 4,
-      header: "Analytic Dashboard",
-      desc: "Comprehensively analyze visitor data",
-      icon: "/img/buil.png"
+      header: "Integrated System",
+      desc: "Ease of implementation into HR systems",
+      icon: "/img/cloud.png"
     },
   ]
 

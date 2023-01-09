@@ -38,11 +38,51 @@ const Projects = () => {
     },
     {
       key: 2,
-      img: "/img/car1.png",
-      header: 'Energy Building Tower',
+      img: "/img/car2.png",
+      header: 'Masjid Al-Istiqomah',
+      location: "Jakarta, Indonesia",
+      type: "Public Area",
+      desc: "Masjid Al-Istiqomah -  1 Unit Thermal Camera"
+    },
+    {
+      key: 3,
+      img: "/img/car3.png",
+      header: 'BNPB Tower',
       location: "Jakarta, Indonesia",
       type: "Building",
-      desc: "Medco Foundation -  3 unit Thermal Camera"
+      desc: "BNPB - 1 Unit Thermal Camera"
+    },
+    {
+      key: 4,
+      img: "/img/car4.png",
+      header: 'BPOM Pusat Percetakan Negara',
+      location: "Jakarta, Indonesia",
+      type: "Building",
+      desc: "BPOM Pusat  - 1 Unit Thermal Camera"
+    },
+    {
+      key: 5,
+      img: "/img/car5.png",
+      header: 'Kementrian Keuangan Indonesia',
+      location: "Jakarta, Indonesia",
+      type: "Building",
+      desc: "Gedung Frans Seda  - 1 Unit Thermal Camera"
+    },
+    {
+      key: 6,
+      img: "/img/car6.png",
+      header: 'Bakrie Tower',
+      location: "Jakarta, Indonesia",
+      type: "Building",
+      desc: "Bakrie Tower Floor  - 2 Unit Thermal Camera"
+    },
+    {
+      key: 7,
+      img: "/img/car7.png",
+      header: 'Nirwan Bakrie Project',
+      location: "Jakarta, Indonesia",
+      type: "Building",
+      desc: "Resident - 1 Unit Thermal Camera"
     },
   ]
 

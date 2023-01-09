@@ -18,45 +18,45 @@ const CaseStudy = () => {
       key: 2,
       label: "Hospital",
       title: "Keep your hospital safe",
-      desc: "A comprehensive system of security cameras can help protect your building, employees, and materials, as well as help you remain competitive in a growing market.",
+      desc: "In order to provide better service and maintaining order in hospital, it is necessary to build a surveillance system. The surveillance system should allow 24-hour monitoring for key areas and provide analysis results for decision maker.",
       icon: "/img/hospital.png",
-      image: "",
+      image: "/img/hospital-case.png",
       isVisible: false
     },
     {
       key: 3,
       label: "Warhouse",
       title: "Keep your warehouse safe",
-      desc: "A comprehensive system of security cameras can help protect your building, employees, and materials, as well as help you remain competitive in a growing market.",
+      desc: "A surveillance system can help to reduce the risk of stock missing and improve the ability of warehouse efficiency of stock management during transport and storage.",
       icon: "/img/warehouse.png",
-      image: "",
+      image: "/img/warehouse-case.png",
       isVisible: false
     },
     {
       key: 4,
       label: "Office Building",
       title: "Keep your office building safe",
-      desc: "A comprehensive system of security cameras can help protect your building, employees, and materials, as well as help you remain competitive in a growing market.",
+      desc: "A surveillance system can help 7/24h security monitoring, reduce the risk of valuable company assets missing and with AI Camera that grants you the ability to zoom in and out without losing image quality.",
       icon: "/img/office-building.png",
-      image: "",
+      image: "/img/office-case.png",
       isVisible: false
     },
     {
       key: 5,
       label: "Gas Station",
       title: "Keep your gas station safe",
-      desc: "A comprehensive system of security cameras can help protect your building, employees, and materials, as well as help you remain competitive in a growing market.",
+      desc: "In the daily business, a gas station operator should not only focus on service quality, but also pay attention to the statistics of customer visits, so as to achieve more efficient operation and management.",
       icon: "/img/gas-station.png",
-      image: "",
+      image: "/img/gas-station-case.png",
       isVisible: false
     },
     {
       key: 6,
       label: "Hotel",
       title: "Keep your hotel safe",
-      desc: "A comprehensive system of security cameras can help protect your building, employees, and materials, as well as help you remain competitive in a growing market.",
+      desc: "Alarm information and handling steps are recorded on papers by handwriting, which is difficult to manage and easy to get lost.",
       icon: "/img/hotel.png",
-      image: "",
+      image: "/img/hospital-case.png",
       isVisible: false
     },
   ])

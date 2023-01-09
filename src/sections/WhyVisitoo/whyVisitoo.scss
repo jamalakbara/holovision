@@ -5,26 +5,48 @@
   &__content{
     margin-top: $margin-from-heading;
   }
+  &__image{
+    width: 50%;
+    img{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
   &__table{
+    p, b{
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+
+    }
+    b{
+      color: #21DDBE
+    }
     box-sizing: border-box;
-
+    
     padding: 32px;
-
+    
     width: 100%;
     height: 668px;
     left: 418px;
     top: 2258px;
-
+    
     border: 1px solid #FFFFFF;
     border-radius: 16px;
-
+    
     color: white;
-
+    
     tr{
       td{
         text-align: center;
       }
     }
+  }
+  &__table-desc{
+    height: unset;
+    border: none;
   }
 }
 
@@ -34,26 +56,48 @@
     &__content{
       margin-top: $margin-from-heading-sm;
     }
+    &__image{
+      width: 50%;
+      img{
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
     &__table{
+      p, b{
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      }
+      b{
+        color: #21DDBE
+      }
       box-sizing: border-box;
-  
+      
       padding: 32px;
-  
+      
       width: 100%;
       height: 668px;
       left: 418px;
       top: 2258px;
-  
+      
       border: 1px solid #FFFFFF;
       border-radius: 16px;
-  
+      
       color: white;
-  
+      
       tr{
         td{
           text-align: center;
         }
       }
+    }
+    &__table-desc{
+      height: unset;
+      border: none;
     }
   }
 }
@@ -64,26 +108,48 @@
     &__content{
       margin-top: $margin-from-heading-sm;
     }
+    &__image{
+      width: 50%;
+      img{
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
     &__table{
+      p, b{
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      }
+      b{
+        color: #21DDBE
+      }
       box-sizing: border-box;
-  
+      
       padding: 32px;
-  
+      
       width: 100%;
       height: 668px;
       left: 418px;
       top: 2258px;
-  
+      
       border: 1px solid #FFFFFF;
       border-radius: 16px;
-  
+      
       color: white;
-  
+      
       tr{
         td{
           text-align: center;
         }
       }
+    }
+    &__table-desc{
+      height: unset;
+      border: none;
     }
   }
 }
@@ -94,26 +160,48 @@
     &__content{
       margin-top: $margin-from-heading-sm;
     }
+    &__image{
+      width: 50%;
+      img{
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
     &__table{
+      p, b{
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      }
+      b{
+        color: #21DDBE
+      }
       box-sizing: border-box;
-  
+      
       padding: 32px;
-  
+      
       width: 100%;
       height: 668px;
       left: 418px;
       top: 2258px;
-  
+      
       border: 1px solid #FFFFFF;
       border-radius: 16px;
-  
+      
       color: white;
-  
+      
       tr{
         td{
           text-align: center;
         }
       }
+    }
+    &__table-desc{
+      height: unset;
+      border: none;
     }
   }
 }
@@ -124,26 +212,48 @@
     &__content{
       margin-top: $margin-from-heading;
     }
+    &__image{
+      width: 50%;
+      img{
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
     &__table{
+      p, b{
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      }
+      b{
+        color: #21DDBE
+      }
       box-sizing: border-box;
-  
+      
       padding: 32px;
-  
+      
       width: 100%;
       height: 668px;
       left: 418px;
       top: 2258px;
-  
+      
       border: 1px solid #FFFFFF;
       border-radius: 16px;
-  
+      
       color: white;
-  
+      
       tr{
         td{
           text-align: center;
         }
       }
+    }
+    &__table-desc{
+      height: unset;
+      border: none;
     }
   }
 }

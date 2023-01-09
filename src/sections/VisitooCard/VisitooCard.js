@@ -4,7 +4,7 @@ import Card from '../../components/Card/Card'
 const VisitooCard = () => {
   return (
     <section className="visitoo container">
-      <Card img={'/img/visitoo.png'} header={'Visitoo'} desc={'Quick check-in experience, store visitor information in database, manage and analyze visitor behavior on your own dashboard'} />
+      <Card img={'/img/visitoo.png'} header={'Visitoo'} desc={'The VISITOO system is a solution for managing employees and guests through monitoring, which includes a visitor registration system, camera surveillance system, and identity verification system, in order to ensure the security of the location and prevent unauthorized access.'} />
     </section>
   )
 }

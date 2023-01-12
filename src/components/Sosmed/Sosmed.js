@@ -5,13 +5,13 @@ const Sosmed = () => {
     {
       key: 1,
       label: "instagram",
-      to: "https://instagram.com",
+      to: "https://www.instagram.com/holovisionstore/",
       icon: "/img/ig.png"
     },
     {
       key: 2,
       label: "facebook",
-      to: "https://facebook.com",
+      to: "https://www.youtube.com/@holovisionstore",
       icon: "/img/fb.png"
     },
     {

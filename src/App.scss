@@ -17,5 +17,82 @@ a{
 }
 
 .container{
-  padding: 0 150px;
+  padding: 100px 150px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: #21DDBE !important;
+}
+
+.slick-dots li button:before{
+  color: lighten($color: #21DDBE, $amount: 20%) !important;
+}
+
+.slick-dots{
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  bottom: -100px !important;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  /* Styles for small screens go here */
+  .container{
+    padding: 25px;
+  }
+
+  .slick-dots{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    bottom: -60px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Styles for small screens go here */
+  .container{
+    padding: 40px;
+  }
+
+  .slick-dots{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    bottom: -60px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small screens go here */
+  .container{
+    padding: 75px;
+  }
+
+  .slick-dots{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    bottom: -60px !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Styles for small screens go here */
+  .container{
+    padding: 100px;
+  }
+
+  .slick-dots{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    bottom: -60px !important;
+  }
 }

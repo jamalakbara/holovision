@@ -1,0 +1,39 @@
+@import '/public/css/general.scss';
+
+.product{
+  min-height: $min-height;
+
+  &__cards{
+    margin-top: $margin-from-heading;
+  }
+}
+
+@media (max-width: 480px) {
+  .product{
+    min-height: $min-height;
+  
+    &__cards{
+      margin-top: $margin-from-heading-sm;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product{
+    min-height: $min-height;
+  
+    &__cards{
+      margin-top: $margin-from-heading-sm;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product{
+    min-height: $min-height;
+  
+    &__cards{
+      margin-top: $margin-from-heading-sm;
+    }
+  }
+}

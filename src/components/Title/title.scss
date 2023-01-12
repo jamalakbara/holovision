@@ -1,0 +1,63 @@
+@import '/public/css/general.scss';
+
+.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: $line-height-title;
+  letter-spacing: 0.08em;
+
+  color: #FFFFFF;
+  
+  b{
+    color: #21DDBE;
+  }
+}
+
+@media (max-width: 480px) {
+  .title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: $line-height-title-sm;
+    letter-spacing: 0.08em;
+  
+    color: #FFFFFF;
+    
+    b{
+      color: #21DDBE;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: $line-height-title-sm;
+    letter-spacing: 0.08em;
+  
+    color: #FFFFFF;
+    
+    b{
+      color: #21DDBE;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: $line-height-title-sm;
+    letter-spacing: 0.08em;
+  
+    color: #FFFFFF;
+    
+    b{
+      color: #21DDBE;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.text-with-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    margin-right: 8px;
+  }
+
+  .description{
+    margin-top: 0;
+  }
+}

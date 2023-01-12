@@ -1,0 +1,67 @@
+@import '/public/css/general.scss';
+
+.clients{
+  &__clients{
+    margin-top: $margin-from-heading;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__client{
+    width: 100% / 5;
+    margin: 85px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients{
+    &__clients{
+      margin-top: $margin-from-heading-sm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    &__client{
+      width: 100% / 5;
+      margin: 85px 32px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .clients{
+    &__clients{
+      margin-top: $margin-from-heading-sm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    &__client{
+      width: 100% / 5;
+      margin: 85px 32px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .clients{
+    &__clients{
+      margin-top: $margin-from-heading-sm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    &__client{
+      width: 100% / 5;
+      margin: 85px 32px;
+    }
+  }
+}

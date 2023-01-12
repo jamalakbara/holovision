@@ -1,0 +1,29 @@
+
+
+.powerful-ai{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  
+  &__text, &__image{
+    flex: 1 1 50%;
+  }
+
+  &__image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__text{
+    .description{
+      p{
+        margin-bottom: 32px;
+      }
+    }
+    .header{
+      margin-bottom: 63px;
+    }
+  }
+}

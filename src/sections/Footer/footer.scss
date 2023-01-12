@@ -1,0 +1,82 @@
+@import '/public/css/general.scss';
+.footer{
+  min-height: $min-height;
+  background-image: url('../../../public/img/surreal\ bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  &__form{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__contact{
+    .contact-us{
+      .button{
+        width: 100%;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer{
+    min-height: $min-height;
+    background-image: url('../../../public/img/surreal\ bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &__form{
+      display: flex;
+      justify-content: center;
+    }
+    &__contact{
+      .contact-us{
+        .button{
+          width: 100%;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer{
+    min-height: $min-height;
+    background-image: url('../../../public/img/surreal\ bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &__form{
+      display: flex;
+      justify-content: center;
+    }
+    &__contact{
+      .contact-us{
+        .button{
+          width: 100%;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer{
+    min-height: $min-height;
+    background-image: url('../../../public/img/surreal\ bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &__form{
+      display: flex;
+      justify-content: center;
+    }
+    &__contact{
+      .contact-us{
+        .button{
+          width: 100%;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+@import '/public/css/general.scss';
+
+.another-features{
+  min-height: 100vh;
+
+  &__main{
+    margin-top: $margin-from-heading;
+    display: flex;
+    gap: $gap-split-half-flex;
+  }
+
+  &__text, &__image{
+    flex: 1;
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .another-features{
+    min-height: 100vh;
+  
+    &__main{
+      margin-top: $margin-from-heading-sm;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text, &__image{
+      flex: 1;
+    }
+
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  
+    &__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .description, .header{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .another-features{
+    min-height: 100vh;
+  
+    &__main{
+      margin-top: $margin-from-heading-sm;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text, &__image{
+      flex: 1;
+    }
+
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  
+    &__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .description, .header{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .another-features{
+    min-height: 100vh;
+  
+    &__main{
+      margin-top: $margin-from-heading-sm;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text, &__image{
+      flex: 1;
+    }
+
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  
+    &__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .description, .header{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .another-features{
+    min-height: 100vh;
+  
+    &__main{
+      margin-top: $margin-from-heading;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: $gap-split-half-flex;
+    }
+  
+    &__text, &__image{
+      flex: 1;
+    }
+
+    &__image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  
+    &__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .description, .header{
+        text-align: center;
+      }
+    }
+  }
+}

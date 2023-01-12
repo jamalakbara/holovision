@@ -1,23 +1,30 @@
 import './App.scss';
-import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home/Home'
-import Navbar from './components/Navbar/Navbar';
-import Why from './routes/Why/Why';
+import Visitoo from './routes/Visitoo/Visitoo';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Holovision from './routes/Holovision/Holovision';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/visitoo",
+    element: <Visitoo />,
+  },
+  {
+    path: "/holovision",
+    element: <Holovision />,
+  },
+]);
 
 function App() {
   return (
-    <>
-      <Navbar />
-
-      <Home />
-
-      <Why />
-
-      <Routes>
-        <Route exact path="/" component={Home} />
-        {/* <Route path="/about" component={About} /> */}
-      </Routes>
-    </>
+    <RouterProvider router={router} />
   );
 }
 

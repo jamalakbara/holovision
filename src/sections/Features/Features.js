@@ -13,7 +13,7 @@ const Features = () => {
         "License Plate Recognition",
         "Crowd People Estimation",
         "Vehicle Traffic Estimation",
-        "Costume AI Solution "
+        "Costume AI Solution"
       ],
       icon: "/img/AI Solution.png"
     },
@@ -21,11 +21,11 @@ const Features = () => {
       key: 2,
       header: "Application",
       descs: [
-        "Face Recognition",
-        "License Plate Recognition",
+        "Smart Perimeter with AI",
+        "Visitor management & Access Control",
         "Crowd People Estimation",
-        "Vehicle Traffic Estimation",
-        "Costume AI Solution "
+        "Attendance and Room Management",
+        "Alarm Management"
       ],
       icon: "/img/Application.png"
     },
@@ -33,11 +33,11 @@ const Features = () => {
       key: 3,
       header: "System & Integration",
       descs: [
-        "Face Recognition",
-        "License Plate Recognition",
-        "Crowd People Estimation",
-        "Vehicle Traffic Estimation",
-        "Costume AI Solution "
+        "Infrastructure Installation",
+        "Server and Networking",
+        "Analytics Algorithms",
+        "System Integrator",
+        "Dashboard and Reporting"
       ],
       icon: "/img/System n Integration.png"
     },
@@ -45,11 +45,11 @@ const Features = () => {
       key: 4,
       header: "One Stop Services",
       descs: [
-        "Face Recognition",
-        "License Plate Recognition",
-        "Crowd People Estimation",
-        "Vehicle Traffic Estimation",
-        "Costume AI Solution "
+        "Documentation",
+        "Training",
+        "Technical Support",
+        "Project Management",
+        "After Sales Support"
       ],
       icon: "/img/One Stop.png"
     },

@@ -10,20 +10,14 @@ const Sosmed = () => {
     },
     {
       key: 2,
-      label: "facebook",
-      to: "https://www.youtube.com/@holovisionstore",
-      icon: "/img/fb.png"
-    },
-    {
-      key: 3,
       label: "youtube",
-      to: "https://youtube.com",
+      to: "https://www.youtube.com/@holovisionstore",
       icon: "/img/yt.png"
     },
     {
-      key: 4,
+      key: 3,
       label: "linkedin",
-      to: "https://linkedin.com",
+      to: "https://www.linkedin.com/company/holovision",
       icon: "/img/linkedin.png"
     },
   ]

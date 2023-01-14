@@ -13,7 +13,7 @@ const Compro = () => {
     <section className='compro container'>
       <div className='compro__main'>
         <div className='compro__compro'>
-          <h1>Trust Your Asset Security With AI</h1>
+          <h1>Trusted Security And Surveillance Solution</h1>
           <Button label={'Download Compro'} on_click={handleClick} />
           <a
             ref={downloadRef}

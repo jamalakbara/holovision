@@ -6,9 +6,11 @@
     margin-top: $margin-from-heading;
   }
   &__image{
-    width: 50%;
+    display: flex;
+    justify-content: center;
     img{
-      width: 100%;
+      width: 50%;
+      // width: 100%;
       margin: 0 auto;
     }
   }
@@ -57,9 +59,11 @@
       margin-top: $margin-from-heading-sm;
     }
     &__image{
-      width: 50%;
+      display: flex;
+      justify-content: center;
       img{
-        width: 100%;
+        width: 50%;
+        // width: 100%;
         margin: 0 auto;
       }
     }
@@ -109,9 +113,11 @@
       margin-top: $margin-from-heading-sm;
     }
     &__image{
-      width: 50%;
+      display: flex;
+      justify-content: center;
       img{
-        width: 100%;
+        width: 50%;
+        // width: 100%;
         margin: 0 auto;
       }
     }
@@ -161,12 +167,14 @@
       margin-top: $margin-from-heading-sm;
     }
     &__image{
+    display: flex;
+    justify-content: center;
+    img{
       width: 50%;
-      img{
-        width: 100%;
-        margin: 0 auto;
-      }
+      // width: 100%;
+      margin: 0 auto;
     }
+  }
     &__table{
       p, b{
       font-size: 25px;
@@ -213,12 +221,14 @@
       margin-top: $margin-from-heading;
     }
     &__image{
+    display: flex;
+    justify-content: center;
+    img{
       width: 50%;
-      img{
-        width: 100%;
-        margin: 0 auto;
-      }
+      // width: 100%;
+      margin: 0 auto;
     }
+  }
     &__table{
       p, b{
       font-size: 25px;

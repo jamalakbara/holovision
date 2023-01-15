@@ -101,7 +101,7 @@ const CaseStudy = () => {
       <div className='case-study__main'>
           {
             cases.filter(dt => dt.isVisible).map(dt => (
-                  <div className='case-study__content'>
+                  <div key={dt.key} className='case-study__content'>
                     <h1>{dt.title}</h1>
                     <Description>
                       <p>{dt.desc}</p>

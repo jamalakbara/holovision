@@ -24,4 +24,8 @@
   letter-spacing: 0.03em;
 
   color: #262626;
+
+  &__loading{
+    opacity: 0.5;
+  }
 }

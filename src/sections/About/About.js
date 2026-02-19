@@ -13,7 +13,7 @@ const About = () => {
         </Title>
         <Description>
           <p>
-            Holovision is end-to-end security and surveillance solution that brings all the intelligent function of a video surveillance together to keep people and property assets safe all the time.
+            Holovision is an end-to-end security and surveillance solution that brings all the intelligent functions of a video surveillance system together to keep people and property assets safe at all times.
           </p>
         </Description>
       </div>

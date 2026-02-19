@@ -1,27 +1,27 @@
-.heading{
-  h1{
+.heading {
+  h1 {
     position: relative;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: var(--font-size-h2); // Fluid typography
+    line-height: 1.2;
     text-align: center;
-
-    letter-spacing: 0.08em;
-
+    letter-spacing: 0.05em;
     color: #FFFFFF;
+    margin-bottom: var(--spacing-md);
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
-      width: 120px;
-      height: 8px;
+      width: 100px;
+      height: 6px;
       display: block;
       background: #21DDBE;
-      bottom: -14px;
+      bottom: -12px;
       left: 50%;
       transform: translateX(-50%);
+      border-radius: 3px;
     }
   }
 }

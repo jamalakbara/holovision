@@ -1,148 +1,67 @@
 @import '/public/css/general.scss';
 
-.why{
-  // margin-top: $padding-section;
-  min-height: $min-height;
+.why {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
 
-  &__main{
+  &__main {
     display: flex;
-    margin-top: $margin-from-heading;
+    justify-content: space-between;
     align-items: center;
-    gap: $gap-split-half-flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
   }
 
-  &__text, &__images{
+  &__text {
     flex: 1;
+    min-width: 300px;
+
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin-bottom: var(--spacing-md);
+      width: 100%;
+    }
   }
 
-  &__images{
+  &__images {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 56px;
+    grid-gap: var(--spacing-md);
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; // Stack cards on tablet and mobile
+      width: 100%;
+      padding: 0 var(--spacing-sm);
+    }
+  }
+
+  // Wrapper for animation control
+  .why__card-wrapper {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    display: flex;
+    justify-content: center; // Ensure card is centered in grid cell
   }
 }
 
-/* Small screens */
-@media (max-width: 480px) {
-  .why{
-    // margin-top: $padding-section;
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-    
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__images{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .why{
-    // margin-top: $padding-section;
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-    
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__images{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .why{
-    // margin-top: $padding-section;
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-    
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__images{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .why{
-    // margin-top: $padding-section;
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-    
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__images{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

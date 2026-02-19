@@ -43,15 +43,17 @@ const Why = () => {
       <Heading text={'Why Holovision?'} />
       <div className='why__main'>
         <div className='why__text'>
-          <Header text={'Tired of having problems during surveillance?'} />
+          <Header text={'Facing surveillance challenges?'} />
           <Description>
-            <p>if those are your problem, then you’re in the right place!</p>
+            <p>If these sound familiar, you’re in the right place.</p>
           </Description>
         </div>
         <div className='why__images'>
           {
-            images.map(image => (
-              <Image key={image.key} src={image.src} desc={image.desc} />
+            images.map((image, index) => (
+              <div key={image.key} style={{ animationDelay: `${index * 0.1}s` }} className="why__card-wrapper">
+                <Image src={image.src} desc={image.desc} />
+              </div>
             ))
           }
         </div>

@@ -1,145 +1,82 @@
 @import '/public/css/general.scss';
 
-.solution{
-  min-height: $min-height;
+.solution {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+  background: radial-gradient(circle at 70% 50%, rgba(33, 221, 190, 0.05) 0%, rgba(1, 18, 19, 0) 70%); // Subtle background glow
 
-  &__main{
+  &__main {
     display: flex;
-    margin-top: $margin-from-heading;
     align-items: center;
-    gap: $gap-split-half-flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: var(--spacing-lg);
+      text-align: center;
+    }
   }
 
-  &__text, &__image{
+  &__text {
     flex: 1;
+
+    // Ensure text doesn't get too wide on large screens
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards; // Animation
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
   }
 
-  &__image{
+  &__image {
+    flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-}
+    align-items: center;
+    opacity: 0;
+    animation: fadeInRight 1s ease-out forwards; // Animation
+    animation-delay: 0.3s;
 
-@media (max-width: 480px) {
-  .solution{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-  
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__image{
-      width: 100%;
-      img{
-        width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+      filter: drop-shadow(0 0 30px rgba(33, 221, 190, 0.3)); // Glowing shadow
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
       }
     }
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .solution{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-  
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__image{
-      width: 100%;
-      img{
-        width: 100%;
-      }
-    }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .solution{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-  
-    &__text{
-      .header, .description{
-        text-align: center;
-      }
-    }
-  
-    &__image{
-      width: 100%;
-      img{
-        width: 100%;
-      }
-    }
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
-}
 
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .solution{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__main{
-      display: flex;
-      // flex-direction: column-reverse;
-      margin-top: $margin-from-heading-sm;
-      align-items: center;
-      gap: $gap-split-half-flex;
-    }
-  
-    // &__text{
-    //   .header, .description{
-    //     text-align: center;
-    //   }
-    // }
-  
-    &__image{
-      width: 100%;
-      img{
-        width: 100%;
-      }
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -1,147 +1,78 @@
 @import '/public/css/general.scss';
 
-.compro{
+.compro {
   position: relative;
-  min-height: $min-height;
-  background-image: url('../../../public/img/home.png');
+  min-height: 100vh;
+  // Use a linear gradient overlay to sharpen text and mask the image
+  background:
+    linear-gradient(to bottom, rgba(1, 18, 19, 0.3) 0%, rgba(1, 18, 19, 0.8) 80%, #011213 100%), // Gradient mask at bottom
+    url('../../../public/img/home.png');
   background-repeat: no-repeat;
-  background-position: top $padding-section right 70px;
-  background-size: auto 1060px / 2;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   align-items: center;
+  padding-top: $nav-height;
 
-  &__main{
+  @media (max-width: 768px) {
+    background-position: center;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__main {
     display: flex;
+    width: 100%;
+    z-index: 2; // Ensure content is above any pseudo-elements
   }
 
-  &__image{
-    position: absolute;
-    top: $nav-height + $padding-section - 50px;
-    right: 70px;
-    height: 790px;
-  }
+  &__compro {
+    width: 100%;
+    max-width: 700px;
 
-  &__compro{
-    h1{
+    h1 {
       font-style: normal;
-      font-weight: 700;
-      font-size: 64px;
-      line-height: $line-height-title;
-      letter-spacing: 0.08em;
-      width: 568px;
+      font-weight: 800; // Bolder font weight
+      font-size: var(--font-size-h1);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
       color: #FFFFFF;
-      margin-bottom: 48px;
+      margin-bottom: var(--spacing-lg);
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); // Better readability
+      opacity: 0; // Initial state for animation
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.2s;
+
+      @media (max-width: 768px) {
+        font-size: clamp(2.5rem, 8vw, 3.5rem); // Specific mobile sizing
+      }
+    }
+
+    button {
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
 
-@media (max-width: 480px) {
-  .compro{
-    position: relative;
-    min-height: $min-height;
-    background-image: url('../../../public/img/home.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-  
-    &__main{
-      display: flex;
-    }
-  
-    &__image{
-      position: absolute;
-      top: $nav-height + $padding-section - 50px;
-      right: 70px;
-      height: 790px;
-    }
-  
-    &__compro{
-      h1{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: $line-height-title;
-        letter-spacing: 0.08em;
-        width: 100%;
-        color: #FFFFFF;
-        margin-bottom: 48px;
-      }
-    }
+// Keyframes for Fade In Up animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .compro{
-    position: relative;
-    min-height: $min-height;
-    background-image: url('../../../public/img/home.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-  
-    &__main{
-      display: flex;
-    }
-  
-    &__image{
-      position: absolute;
-      top: $nav-height + $padding-section - 50px;
-      right: 70px;
-      height: 790px;
-    }
-  
-    &__compro{
-      h1{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: $line-height-title;
-        letter-spacing: 0.08em;
-        width: 100%;
-        color: #FFFFFF;
-        margin-bottom: 48px;
-      }
-    }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .compro{
-    position: relative;
-    min-height: $min-height;
-    background-image: url('../../../public/img/home.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-  
-    &__main{
-      display: flex;
-    }
-  
-    &__image{
-      position: absolute;
-      top: $nav-height + $padding-section - 50px;
-      right: 70px;
-      height: 790px;
-    }
-  
-    &__compro{
-      h1{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: $line-height-title;
-        letter-spacing: 0.08em;
-        width: 100%;
-        color: #FFFFFF;
-        margin-bottom: 48px;
-      }
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

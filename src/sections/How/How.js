@@ -9,17 +9,17 @@ const How = () => {
     {
       key: 1,
       header: "Connect",
-      desc: "Build CCTV surveillance system that cover critical areas and integrate video data between such area to visualize the underlying security status."
+      desc: "Deploy a comprehensive surveillance network covering critical areas, integrating video data to visualize security status."
     },
     {
       key: 2,
       header: "Collect",
-      desc: "Implement AI Capabilities and applications on top of security resources to promote the intelligent transformation of a video system, turning video into IoT data."
+      desc: "Transform video into IoT data by implementing AI capabilities, turning passive footage into actionable intelligence."
     },
     {
       key: 3,
       header: "Comprehend",
-      desc: "Data generated in the intelligent video  system with data from information networks  according to practical business needs, then provide valude-added services and  applications. "
+      desc: "Correlate video data with information networks to generate insights and value-added services according to business needs."
     },
   ]
 
@@ -36,8 +36,8 @@ const How = () => {
       </div>
       <div className="how__contents">
         {
-          contents.map(content => (
-            <div key={content.key} className="how__content">
+          contents.map((content, index) => (
+            <div key={content.key} className="how__content" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="how__content-title">
                 <div className="how__content-number">
                   {content.key}

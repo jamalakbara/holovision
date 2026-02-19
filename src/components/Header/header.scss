@@ -1,11 +1,10 @@
-.header{
+.header {
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 158.9%;
-  /* or 51px */
-
-  letter-spacing: 0.08em;
-
+  font-size: var(--font-size-h3); // Fluid typography
+  line-height: 1.3;
+  letter-spacing: 0.05em;
   color: #FFFFFF;
+  margin-bottom: var(--spacing-sm);
 }

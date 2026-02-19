@@ -9,9 +9,9 @@ const Solution = () => {
       <Heading text={'Our Solution'} />
       <div className='solution__main'>
         <div className='solution__text'>
-          <Header text={'We don’t just provide you with software'} />
+          <Header text={'More Than Just Software'} />
           <Description>
-            <p>{'We also solve your problem with  3C (Connect, Collect, Comprehend)'}</p>
+            <p>{'A Comprehensive 3C Approach: Connect, Collect, Comprehend. We provide an integrated ecosystem that solves your surveillance challenges fundamentally.'}</p>
           </Description>
         </div>
         <div className='solution__image'>

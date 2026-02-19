@@ -1,117 +1,100 @@
 @import '/public/css/general.scss';
 
-.about{
-  min-height: $min-height;
+.about {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  gap: $gap-split-half-flex;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
 
-  &__main, &__img{
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+  }
+
+  &__main {
     flex: 1;
-  }
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
 
-  &__img{
-    display: flex;
-    justify-content: center;
-  }
-}
+    // Use nested selectors to style React components if they accept classNames
+    // or rely on the global typography changes
 
-@media (max-width: 480px) {
-  .about{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: $gap-split-half-flex;
-  
-    &__main{
-      flex: 1;
-      .description, .title{
-        text-align: center;
+    // Example targetting if structure allows
+    h1 {
+      margin-bottom: var(--spacing-md);
+      font-size: var(--font-size-h2); // Fluid typography
+
+      b {
+        color: var(--color-primary);
       }
     }
-    &__img{
-      flex: 0;
-    }
-  
-    &__img{
-      display: none;
-    }
   }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .about{
-    min-height: $min-height;
+  &__img {
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: $gap-split-half-flex;
-  
-    &__main{
-      flex: 1;
-      .description, .title{
-        text-align: center;
+    align-items: center;
+    opacity: 0;
+    animation: zoomIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 500px; // Prevent it from getting too huge
+      animation: spin 60s linear infinite; // Slow continuous rotation
+    }
+
+    @media (max-width: 768px) {
+      // Optional: hide or move image on mobile
+      // display: none; 
+      // Keeping it visible or scaling it down is usually better for "premium" feel unless it blocks text
+      margin-top: var(--spacing-md);
+
+      img {
+        max-width: 80%; // Slightly smaller on mobile
       }
-    }
-    &__img{
-      flex: 0;
-    }
-  
-    &__img{
-      display: none;
     }
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .about{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: $gap-split-half-flex;
-  
-    &__main{
-      flex: 1;
-      .description, .title{
-        text-align: center;
-      }
-    }
-    &__img{
-      flex: 0;
-    }
-  
-    &__img{
-      display: none;
-    }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .about{
-    min-height: $min-height;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: $gap-split-half-flex;
-  
-    &__main{
-      flex: 1;
-      .description, .title{
-        text-align: center;
-      }
-    }
-    &__img{
-      flex: 0;
-    }
-  
-    &__img{
-      display: none;
-    }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

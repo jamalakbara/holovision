@@ -1,20 +1,32 @@
-.logo{
+.logo {
   color: white;
   display: flex;
   align-items: center;
+  gap: 12px; // Use gap instead of margin for better spacing control
 
-  img{
-    width: 38px;
-    height: 38px;
-    margin-right: 16px;
+  img {
+    width: auto;
+    height: 32px; // Match navbar logo height
+    margin-right: 0; // Remove margin since we use gap
+
+    @media (min-width: 769px) {
+      height: 36px;
+    }
   }
 
-  p{
-    font-family: 'Futura';
+  p {
+    font-family: 'Montserrat', sans-serif; // Match global font
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 1.2rem; // Reduced from 32px to be more proportional
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin-bottom: 0; // Reset any default margin
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 769px) {
+      font-size: 1.5rem;
+    }
   }
 }
